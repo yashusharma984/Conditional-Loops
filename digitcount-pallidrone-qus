@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+// 121--->121
+public class digitcount_pallidrone_qus {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("check number is pallidrone ");
+        int a = sc.nextInt();
+        int b = a;
+        int rev = 0;
+        int count = 0;
+        while (a > 0)
+        {
+            int rem = a % 10;
+            rev = rev * 10 + rem;
+            a = a / 10;
+        }
+        if (b == rev)
+        {
+            System.out.println("number is pallidrone");
+            while (rev != 0)
+            {
+                int r = rev % 10;
+                count++;
+                rev = rev / 10;
+            }
+            System.out.println("count of digit is pallidrone:" + count);
+        } else {
+            System.out.println("not pallidorne");
+        }
+    }
+}
