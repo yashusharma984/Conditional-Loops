@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+/// ram ---10 syam ----.20
+// ram----20  syam ---10
+public class Swapping_num {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b= sc.nextInt();
+        int temp=0;
+        System.out.println("before swapping"+ a+ " "+b);
+        temp=a;
+        a=b;
+        temp = b;
+        System.out.println("after swapping"+ a+ " "+b);
+
+    }
+}
