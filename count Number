@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+// numer is  12345
+public class count_even_digits {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int count=0;
+        while(num>0) 
+        {
+            int rem = num %10;
+            if (num % 2 == 0)
+            {
+                count++;
+            }
+            num = num / 10;
+        }
+        System.out.println("even digit here:" + count);
+    }
+}
