@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class count_twonumber_pallidorne {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        int rem=0;
+        int rev =0;
+        int count=0;
+        for(int i =a; i<b;i++)
+        {
+            int c=i;
+            while(c>0)
+            {
+                rem = c%10;
+                rev = rev*10 + rem;
+                c=c/10;
+            }
+            if(rev!=i)
+            {
+                count++;
+            }
+            System.out.println(count);
+        }
+    }
+}
